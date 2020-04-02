@@ -51,10 +51,7 @@ void tim_sach_ma_X(thuvien a[], int n, int x)
 	{
 		if (a[i].ms == x)
 		{
-			cout << "\nThong tin cuon sach can tim: ";
-			cout << "\nMa so cuon sach: " << a[i].ms;
-			cout << "\nTen cuon sach: " << a[i].tensach;
-			cout << "\nGia cuon sach: " << a[i].gia;
+			xuat_thong_tin_sach(a[i]);
 		}
 	}
 
@@ -64,7 +61,7 @@ void tim_sach_ten_Y( thuvien a[], int n )
 {
 	string tensach_y;
 	rewind(stdin);
-	cout << "Nhap ten cuon sach can tim";
+	cout << "\nNhap ten cuon sach can tim";
 	getline(cin,tensach_y);
 	for (int i = 0; i < n; i++)
 	{
@@ -84,9 +81,7 @@ void max_book( thuvien a[], int n)
 		{
 			if (a[i].gia = max)
 			{
-				cout << "\nMa so cuon sach: " << a[i].ms;
-				cout << "\nTen cuon sach: " << a[i].tensach;
-				cout << "\nGia cuon sach: " << a[i].gia;
+				xuat_thong_tin_sach(a[i]);
 			}
 		}
 }
