@@ -102,7 +102,6 @@ int main()
 	int luachon;
 	do
 	{
-		
 		system("cls");
 		cout << endl << endl;
 		cout << "               +-------------------------------------------------+ \n";
@@ -155,6 +154,7 @@ int main()
 			break;
 		default:
 			cout << "Ban chon sai roi vui long nhap lai!!! \n";
+			system("pause");
 			break;
 		}
 	} while (luachon);
